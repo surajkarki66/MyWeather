@@ -8,9 +8,7 @@ import WeatherInfo from "./components/WeatherInfo";
 import UnitsPicker from "./components/UnitsPicker";
 import ReloadIcon from "./components/ReloadIcon";
 import WeatherDetails from "./components/WeatherDetails";
-
-const WEATHER_API_KEY = "dd41b4052a06d59a3da0cc7b6fea85c2";
-const BASE_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?";
+import { WEATHER_API_KEY, BASE_WEATHER_URL } from "./configs";
 
 export default function App() {
   const [errorMessage, setErrorMessage] = useState(null);
