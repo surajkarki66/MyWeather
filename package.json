@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo/vector-icons": "^12.0.0",
     "@react-native-community/picker": "^1.8.1",
     "expo": "~40.0.0",
     "expo-location": "~10.0.0",
