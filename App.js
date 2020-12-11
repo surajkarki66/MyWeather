@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import * as Location from "expo-location";
 
+import WeatherInfo from "./components/WeatherInfo";
+
 const WEATHER_API_KEY = "dd41b4052a06d59a3da0cc7b6fea85c2";
 const BASE_WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?";
 
@@ -35,14 +37,11 @@ export default function App() {
     }
   }
   if (currentWeather) {
-    const {
-      main: { temp },
-    } = currentWeather;
     return (
       <View style={styles.container}>
         <StatusBar style="auto" />
         <View style={styles.main}>
-          <Text>{temp}</Text>
+          <WeatherInfo currentWeather={currentWeather} />
         </View>
       </View>
     );
