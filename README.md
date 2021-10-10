@@ -1,4 +1,4 @@
-# react-native-weather-app
+# MyWeather
 
 This is a mobile application for checking the weather of the place where you live.
 
